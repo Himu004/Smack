@@ -1,5 +1,6 @@
 package com.example.smack
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -18,7 +19,8 @@ class LoginActivity : AppCompatActivity() {
     }
 
     fun loginCreateUserBtnClicked(view: View) {
-
+        val createUserIntent = Intent(this, CreateUserActivity::class.java)
+        startActivity(createUserIntent)
     }
 
 }
